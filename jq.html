@@ -1,0 +1,104 @@
+<iDOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta name="viewport" contents="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="inter.js"></script>
+
+	
+</head>
+<body>
+	<div class="outer">
+	<div class="inner">
+		<div id="title"><h2 align='center'>Add Product </h2></div>
+		<form style="font-size:20px;">
+			<label for="answerType">Category</label><br>
+			<select id="answerType" required>
+				<option value="">Product Category</option>
+				<option id="1" value="Electronics">Electronics</option>
+				<option id="2" value="Clothes">Clothes</option>
+			</select>
+			<div class=kpressed>
+			<p class="key">Key Pressed:</p>
+			</div><br>
+			<div id="Electronics" style="display:none">
+				<div id="button"><button class="btn1" type="button" id="b1">Hide Description</button><br><br>
+				</div>
+				<div id="para1">
+					Electronic Products is an electronic component and technology trade magazine serving the electronic design community.
+				</div><br>
+				<div>
+					<label for="proname1" style="display:none">Name of Product *:</label>
+					<input id="proname1" type="text" placeholder="Product Name..."  required>
+				</div>
+				<div> 
+					<label for="pd" style="display: none">Product Description *:</label>
+					<textarea name="pd" rows="4" cols="50" id="pd" placeholder="Describe the product!!!"></textarea>
+				</div><br>
+				<div>
+					<label for="CNa" style="display:none">Company Name *:</label>
+					<input type="text" id="CNa" required placeholder="Company Name...">
+				</div>
+				<div>
+					<label for="PN">Price *:</label>
+					<input type="number" id="PN" required  placeholder="Selling Price...">
+				</div><br>
+				
+				<div>
+					Warranty *:
+					<select id="Warranty">
+						<option >3 months</option>
+						<option>6 months</option>
+						<option>1 Year</option>
+						<option>2 Years</option>
+						<option>3 Years</option>
+						<option>Other</option>
+					</select>
+				</div><br>
+			</div>
+			<div id="Clothes" style="display:none">
+				<div id="button"><button class="btn2" type="button" id="b2">Hide Description</button></div><br><br>
+				<div id="para2">
+				Fashion is designed to be fleeting and throwaway, but consumers, designers and manufacturers must once again embrace quality items that are designed to last. The addiction to fast fashion has to end. The focus should now be on true style, quality garments and quality production.
+				</div><br>  
+				<div>
+					<label for="proname2" style="display: none">Name of Product *:</label>
+					<input id="proname2" type="text" required>
+				</div>
+				<div> 
+					<label for="pd" style="display: none">Product Description *:</label>
+					<textarea name="pd" rows="4" cols="50" id="pd" placeholder="Describe the product!!!"></textarea>
+				</div><br>
+				<div>
+					<label for="CN" style="display: none">Company Name *:</label>
+					<input type="text" id="CN" required>
+				</div>
+				<div>
+					Available Sizes:<br>
+					<input type="checkbox" id="0" value="XS">XS
+					<input type="checkbox" id="1" value="S">S
+					<input type="checkbox" id="2" value="M">M
+					<input type="checkbox" id="3" value="L">L
+					<input type="checkbox" id="3" value="XL">XL
+				</div>
+				
+				<div>
+					<br>Available Colours:<br>
+					<input type="checkbox" value="Black">Black<br>
+					<input type="checkbox" value="White">White<br>
+					<input type="checkbox" value="Blue">Blue<br>
+					<input type="checkbox" value="Red">Red<br>
+					<input type="checkbox" value="Yellow">Yellow<br>
+					<input type="checkbox" value="More">More<br>
+				</div>
+				<p class="selected"></p>
+				
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+	</div><br><br>
+</div>
+</body>
+</html>
